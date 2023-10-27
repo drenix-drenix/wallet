@@ -34,7 +34,7 @@ worker = Client("1")
 select = int(input('Выберите режим, 1 - запуск, 2 - подписка, 3 - отписка, 4 - создание сессии:'))
 
 
-#worker.start()
+worker.start()
 async def wallet(app, message):
     try:
         if "Вы не можете активировать этот чек, так как вы не являетесь подписчиком канала" in message.text or\
